@@ -1,0 +1,94 @@
+.hero{
+    background: url("../../../public/HeroBg.png") no-repeat center/cover, #EDE9E9;
+    width: 100vw;
+    height: 62vw;
+}   
+
+.title{
+    overflow: hidden;
+
+    margin-top: 3.75vw;
+
+    font-size: 13.03vw;
+    color: var(--color-yellow);
+    text-transform: uppercase;
+
+    & span{
+        display: block;
+        transform: translateY(20vw);
+    }
+
+}
+
+.image{
+    opacity: 0;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    width: 0%;
+    height: 29.17vw;
+
+    border-radius: 1.15vw;
+
+    
+}
+
+.paragraphs{
+    opacity: 0;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    font-weight: 400;
+    margin-bottom: 0.5vw;
+    padding-inline: 2vw;
+    
+}
+.paragraph1{
+    font-size: 1.04vw;
+    line-height: 1.4;
+
+}
+
+.card{
+    position: relative;
+    width: 100vw;
+    height: 11vw;
+    background-color: var(--color-yellow-light);
+
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+    align-items: center;
+    z-index: 1;
+}
+.contentCard{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    color: #553507;
+}
+.cardContent_title{
+    font-size: 2.38vw;
+    font-weight: 400;
+}
+
+.cardContent_small{
+    font-size: 1.04vw;
+
+
+    
+}
+
+.backgroundCard{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: -1;
+}
