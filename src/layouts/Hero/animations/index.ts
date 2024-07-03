@@ -15,7 +15,7 @@ function animationTitle(){
 }
 
 function animatonImage(){
-    gsap.to(`.${styles.image}`,{
+    gsap.to(`.${styles.figure}`,{
         opacity: 1,
         width: "100%",
         ease: "elastic.out(1,8)",

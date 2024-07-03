@@ -13,48 +13,55 @@ export default function Hero() {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(`.${styles.image}`, {
-      height: "33vw",
-
+      top: "6%",
       scrollTrigger: {
-        trigger: `.${styles.image}`,
-        start: "20% 50%",
-        end: "100% 50%",
+        trigger: `.${styles.hero}`,
+        start: "50%-=120px 50%-20px",
+        markers: true,
+        end: `50%+=${window.innerHeight}px 50%`,
         scrub: true,
       },
     });
+
+    return () => { }
   }, []);
 
   return (
     <>
       <section className={styles.hero}>
-        <h1 className={styles.title}>
-          <span className="span_inside_heroTitle">p.a.i ong</span>
-        </h1>
-      
+        <div className="container">
+          <h1 className={styles.title}>
+            <span className="span_inside_heroTitle">p.a.i ong</span>
+          </h1>
 
-        <div className={styles.paragraphs}>
-          <p className={styles.paragraph1}>
-            🐕🐈 Associe-se e seja mais que <br /> um defensor da causa animal,
-            seja <br /> um aumigo. Doações no direct.
-          </p>
-          <p>Estamos aguardando a sua sua ajuda</p>
+          <div className={styles.paragraphs}>
+            <p className={styles.innerText}>
+              🐕🐈 Associe-se e seja mais que <br /> um defensor da causa animal,
+              seja <br /> um aumigo. Doações no direct.
+              <small className={`${styles.innerText} ${styles.right}`}>Estamos aguardando a sua sua ajuda</small>
+            </p>
+          </div>
+
+          <figure className={styles.figure}>
+            <img className={styles.image} src={dogHero} alt="dog" />
+          </figure>
         </div>
 
-        <div className={styles.image}>
-          <img src={dogHero} alt="dog" />
-        </div>
       </section>
 
       <div className={styles.card}>
         <div className={styles.contentCard}>
           <svg
+            className={styles.icon}
             width="105"
             height="90"
             viewBox="0 0 105 90"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g filter="url(#filter0_d_590_546)">
+            <g
+            // filter="url(#filter0_d_590_546)"
+            >
               <path
                 d="M23.8711 50.3684C27.0686 48.3401 56.1122 29.9163 70.2344 20.9579"
                 stroke="#553507"
@@ -138,6 +145,7 @@ export default function Hero() {
 
         <div className={styles.contentCard}>
           <svg
+            className={styles.icon}
             width="80"
             height="80"
             viewBox="0 0 80 80"
@@ -177,6 +185,7 @@ export default function Hero() {
 
         <div className={styles.contentCard}>
           <svg
+            className={styles.icon}
             width="87"
             height="78"
             viewBox="0 0 87 78"
@@ -221,13 +230,14 @@ export default function Hero() {
 
         <div className={styles.contentCard}>
           <svg
+            className={styles.icon}
             width="105"
             height="90"
             viewBox="0 0 105 90"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g filter="url(#filter0_d_590_546)">
+            <g>
               <path
                 d="M23.8711 50.3684C27.0686 48.3401 56.1122 29.9163 70.2344 20.9579"
                 stroke="#553507"
@@ -265,7 +275,7 @@ export default function Hero() {
             </g>
             <defs>
               <filter
-                id="filter0_d_590_546"
+                // id="filter0_d_590_546"
                 x="0.708984"
                 y="4.59839"
                 width="102.707"

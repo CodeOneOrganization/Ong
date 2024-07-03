@@ -1,0 +1,54 @@
+.adoption {
+  min-height: 100vh;
+}
+
+.wrapper {
+  white-space: nowrap;
+
+  cursor: grab;
+}
+
+.spot {
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  transform: translate(50%, -25%);
+  z-index: -1;
+}
+
+.title {
+  display: inline-block;
+  max-width: max-content;
+
+  margin-top: 5vh;
+  
+}
+
+.arrow {
+  display: inline;
+  float: right;
+  vertical-align: top;
+
+  height: 2ch;
+
+  transform: rotate(6.77deg);
+  cursor: pointer;
+}
+
+.text {
+  display: inline;
+  margin-top: calc(5vh + 6.27vw * 0.9);
+
+  float: right;
+  max-width: 40em;
+}
+
+.innerText {
+  width: 50%;
+}
+
+.small {
+  vertical-align: top;
+  float: right;
+}

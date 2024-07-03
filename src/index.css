@@ -1,4 +1,4 @@
-@import "./stylesguid.css";
+@import "./stylesguide.css";
 
 *{
   padding: 0;
@@ -12,9 +12,4 @@
 html{
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-}
-
-section{
-  overflow: hidden;
-  padding-inline: 2vw;
 }

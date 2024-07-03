@@ -1,0 +1,65 @@
+:root {
+    --color-yellow: #F1A106;
+    --color-yellow-light: #FEBC5B;
+    --color-black: #000;
+    --color-white: #EDE9E9;
+
+    --section-padding: max(1em, 25vh);
+    --container-padding: clamp(1em, 3vw, 58px);
+
+    --animation-fast: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+section {
+    position: relative;
+}
+
+section:not(:nth-of-type(1)){
+    padding-top: var(--section-padding);
+
+}
+
+.container {
+    padding-inline: var(--container-padding);
+
+}
+
+/* ------------------------------------ TYPOGRAPHY ----------------------------------------  */
+
+*.white {
+    color: var(--color-white);
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 6.27vw;
+    line-height: 90%;
+    color: var(--color-yellow);
+    text-transform: uppercase;
+}
+
+p {
+    font-size: max(20px ,1.04vw);
+    font-weight: 400;
+    font-style: normal;
+}
+
+p.small,
+span.small {
+    font-size: 0.8em;
+}
+
+small {
+    font-size: 0.6em;
+    font-weight: 400;
+    font-style: italic;
+}

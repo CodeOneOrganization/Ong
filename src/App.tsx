@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import Hero from "./layouts/Hero";
 
 import LocomotiveScroll, { InstanceOptions } from "locomotive-scroll"
+
+import Adoption from "./layouts/Adoption";
+import Tile from "./layouts/Tile";
+import LoveVideo from "./layouts/LoveVideo";
 interface extendOptions extends InstanceOptions {
   autoResize?: boolean
 }
@@ -31,7 +35,10 @@ export default function App() {
   }, [])
   return (
     <main>
+      <Tile />
       <Hero/>
+      <Adoption />
+      <LoveVideo />
     </main>
   )
 }
