@@ -13,7 +13,7 @@ export default function Hero() {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(`.${styles.image}`, {
-      top: "6%",
+      top: "0%",
       scrollTrigger: {
         trigger: `.${styles.hero}`,
         start: "50%-=120px 50%-20px",

@@ -1,0 +1,23 @@
+.whoWeAre {
+  margin-top: var(--section-padding);
+  background-color: #EEA222;
+
+  border-top-left-radius: calc( 2 * var(--border-size));
+  border-top-right-radius: calc(2 * var(--border-size));
+
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.image {
+  height: 25dvh;
+  width: 100%;
+  aspect-ratio: 1809 / 269;
+
+  object-fit: cover;
+  object-position: 0px 33%;
+
+  border-radius: var(--border-size);
+}

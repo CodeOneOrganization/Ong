@@ -6,6 +6,7 @@
 
     --section-padding: max(1em, 25vh);
     --container-padding: clamp(1em, 3vw, 58px);
+    --border-size: 20px;
 
     --animation-fast: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
