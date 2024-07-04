@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import rendering from "./animations";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import icon from "../../../public/BoneIcon.svg";
 
 export default function Hero() {
   useEffect(() => {
@@ -17,7 +16,6 @@ export default function Hero() {
       scrollTrigger: {
         trigger: `.${styles.hero}`,
         start: "50%-=120px 50%-20px",
-        markers: true,
         end: `50%+=${window.innerHeight}px 50%`,
         scrub: true,
       },

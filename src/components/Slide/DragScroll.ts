@@ -66,7 +66,7 @@ export default class DragScroll {
       .forEach((item) => {
         console.log("item", item)
         console.log("item width", item.clientWidth)
-        this.wrapWidth += item.clientWidth
+        this.wrapWidth += item.clientWidth + 10
       })
 
     this.progress = 0

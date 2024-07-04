@@ -1,4 +1,5 @@
 .adoption {
+
   min-height: 100vh;
 }
 
@@ -6,6 +7,8 @@
   white-space: nowrap;
 
   cursor: grab;
+  overflow: initial;
+
 }
 
 .spot {

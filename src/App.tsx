@@ -6,6 +6,7 @@ import LocomotiveScroll, { InstanceOptions } from "locomotive-scroll"
 import Adoption from "./layouts/Adoption";
 import Tile from "./layouts/Tile";
 import LoveVideo from "./layouts/LoveVideo";
+import Footer from "./layouts/Footer";
 interface extendOptions extends InstanceOptions {
   autoResize?: boolean
 }
@@ -39,6 +40,7 @@ export default function App() {
       <Hero/>
       <Adoption />
       <LoveVideo />
+      <Footer/>
     </main>
   )
 }

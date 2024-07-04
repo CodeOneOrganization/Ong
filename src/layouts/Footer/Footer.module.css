@@ -1,0 +1,72 @@
+.footer {
+  background-color: var(--color-yellow);
+  min-height: 41.25vw;
+
+  position: relative;
+
+  z-index: 1;
+}
+.containerFooter {
+  display: flex;
+  gap: 10vw;
+}
+.sitemap {
+  margin-left: 5vw;
+}
+.sitemap,
+.contact {
+  margin-top: 9vw;
+  gap: 0.7vw;
+}
+
+.logo,
+.title {
+  overflow: hidden;
+  color: var(--color-white);
+}
+.logo span,
+.link span,
+.title span {
+  display: block;
+  transform: translateY(100%);
+}
+
+.link:first-of-type {
+  margin-top: 2vw;
+}
+.link {
+  overflow: hidden;
+  color: var(--color-black);
+}
+
+.logo {
+  position: relative;
+  padding-left: 27.66vw;
+}
+.logo svg {
+  opacity: 0;
+  position: absolute;
+  top: 2.5vw;
+  z-index: 10;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.4vw;
+}
+
+.svg1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
+.svg2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  z-index: -1;
+}
