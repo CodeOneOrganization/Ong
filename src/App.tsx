@@ -7,6 +7,8 @@ import Adoption from "./layouts/Adoption";
 import Tile from "./layouts/Tile";
 import LoveVideo from "./layouts/LoveVideo";
 import Footer from "./layouts/Footer";
+import BibleVerse from "./layouts/BibleVerse";
+import Support from "./layouts/Support";
 interface extendOptions extends InstanceOptions {
   autoResize?: boolean
 }
@@ -40,6 +42,8 @@ export default function App() {
       <Hero/>
       <Adoption />
       <LoveVideo />
+      <Support/>
+      <BibleVerse/>
       <Footer/>
     </main>
   )

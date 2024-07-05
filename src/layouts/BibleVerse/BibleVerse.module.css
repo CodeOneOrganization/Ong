@@ -1,0 +1,25 @@
+.bottom{
+    display: flex;
+    justify-content: end;
+}
+
+.up{
+}
+
+.verse{
+    margin-top: 1.5vw;
+    color: var(--color-yellow);
+}
+
+.title{
+    overflow: hidden;
+}
+.title span{
+    display: block;
+    transform: translateY(400%);
+    opacity: 0;
+}
+
+.bibleVerse{
+    padding-bottom: 3vw;
+}

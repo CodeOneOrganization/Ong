@@ -51,6 +51,11 @@ h2 {
     color: var(--color-yellow);
     text-transform: uppercase;
 }
+h3{
+    font-size: 4.37vw;
+    color: var(--color-yellow);
+
+}
 h4{
     font-size: 3.03vw;
     line-height: 1;
