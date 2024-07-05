@@ -9,6 +9,9 @@
     --border-size: 20px;
 
     --animation-fast: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    --header-bottom-height: 116px;
+    --header-top-height: 60px;
 }
 
 ::-webkit-scrollbar {
@@ -27,7 +30,10 @@ section:not(:nth-of-type(1)){
 
 .container {
     padding-inline: var(--container-padding);
-
+}
+.col{
+    display: flex;
+    flex-direction: column;
 }
 
 /* ------------------------------------ TYPOGRAPHY ----------------------------------------  */
@@ -37,6 +43,8 @@ section:not(:nth-of-type(1)){
 }
 
 h1 {
+    text-transform: uppercase;
+    font-size: 13.02vw;
     font-weight: 900;
 }
 
@@ -47,13 +55,24 @@ h2 {
     color: var(--color-yellow);
     text-transform: uppercase;
 }
+h4{
+    font-size: 3.03vw;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+}
 
+a{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a,
 p {
     font-size: max(20px ,1.04vw);
     font-weight: 400;
     font-style: normal;
 }
-
 p.small,
 span.small {
     font-size: 0.8em;
