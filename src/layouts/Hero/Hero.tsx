@@ -134,9 +134,11 @@ export default function Hero() {
             </defs>
           </svg>
           <div className={styles.cardText}>
-            <h4 className={styles.cardContent_title}>+100</h4>
-            <small className={styles.cardContent_small}>
-              Cães recolhidos e <br /> <span> cuidados</span>
+            <h4 className={styles.amount}>+100</h4>
+            <small className={styles.breefInfo}>
+              Cães recolhidos e
+              <br />
+              cuidados
             </small>
           </div>
         </div>
@@ -174,9 +176,11 @@ export default function Hero() {
           </svg>
 
           <div className={styles.cardText}>
-            <h4 className={styles.cardContent_title}>+100</h4>
-            <small className={styles.cardContent_small}>
-              <span>Doações de </span> <br /> alimentos semanais
+            <h4 className={styles.amount}>+100</h4>
+            <small className={styles.breefInfo}>
+              Doações de
+              <br />
+              alimentos semanais
             </small>
           </div>
         </div>
@@ -218,9 +222,10 @@ export default function Hero() {
           </svg>
 
           <div className={styles.cardText}>
-            <h4 className={styles.cardContent_title}>+100</h4>
-            <small className={styles.cardContent_small}>
-              <span> Adoções de </span> <br />
+            <h4 className={styles.amount}>+100</h4>
+            <small className={styles.breefInfo}>
+              Adoções de
+              <br />
               animaizinhos
             </small>
           </div>
@@ -310,10 +315,11 @@ export default function Hero() {
             </defs>
           </svg>
           <div className={styles.cardText}>
-            <h4 className={styles.cardContent_title}>+100</h4>
-            <small className={styles.cardContent_small}>
+            <h4 className={styles.amount}>+100</h4>
+            <small className={styles.breefInfo}>
               anos de
-              <br /> <span> experiência</span>
+              <br />
+              experiência
             </small>
           </div>
         </div>

@@ -36,9 +36,7 @@ export default class Experience {
   }
 
   public handleMouseMove(e: MouseEvent) {
-    console.log("mousemove")
     const numOfCircles = Math.max(Math.abs(e.movementX), Math.abs(e.movementY)) / 10
-    console.log("numOfCircles", numOfCircles)
 
     for (let i = 0; i < numOfCircles; i++) {
       const x = GSAP.utils.interpolate(this.oldX, e.clientX, (1 / numOfCircles) * i)

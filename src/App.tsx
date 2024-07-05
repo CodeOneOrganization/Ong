@@ -12,6 +12,8 @@ import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 
 import ScrollDirectionProxy from "./components/ScrollDirectionProxy/ScrollDirectionProxy";
+import ModalController from "./components/Modal/ModalController";
+import { BrowserRouter, Route, Router } from "react-router-dom";
 interface extendOptions extends InstanceOptions {
   autoResize?: boolean
 }
@@ -20,7 +22,7 @@ export default function App() {
   const [locomotive, setLocomotive] = useState<LocomotiveScroll>()
 
   useEffect(() => {
-    ;(async () => {
+    ; (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default
 
       const newLocomotiveScroll = new LocomotiveScroll({
@@ -43,15 +45,16 @@ export default function App() {
   }, [])
   return (
     <main>
-      <ScrollDirectionProxy />
-      <Header />
-      <Scene />
-      <Tile />
-      <Hero/>
-      <Adoption />
-      <LoveVideo />
-      <WhoWeAre />
-      <Footer/>
+          <ModalController />
+          <ScrollDirectionProxy />
+          <Header />
+          <Scene />
+          <Tile />
+          <Hero />
+          <Adoption />
+          <LoveVideo />
+          {/* <WhoWeAre /> */}
+          <Footer />
     </main>
   )
 }
