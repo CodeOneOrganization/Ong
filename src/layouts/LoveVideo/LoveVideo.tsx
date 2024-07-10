@@ -14,7 +14,6 @@ export default function LoveVideo() {
             start="0% 50%"
             end="100% 50%"
             id="parallax"
-            markers={true}
           >
             <video className={styles.video} src={videoSrc} autoPlay muted loop></video>
           </Parallax>
@@ -27,9 +26,6 @@ export default function LoveVideo() {
               <small className={`${styles.strophe} small`}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis provident dignissimos odit quis. Velit at fugiat quae. Deserunt, ad sit.
               </small>
-              {/* <span className={`${styles.strophe} small`}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet facere dicta nemo autem quia velit harum quidem illum cupiditate repellat?
-              </span> */}
             </p>
           </div>
         </div>

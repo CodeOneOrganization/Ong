@@ -5,12 +5,14 @@ import styles from "./Scene.module.css"
 import gsap from "gsap"
 
 import useWindowViewport from "../../hooks/useWindowViewports"
+import useSceneCanvas from "../../hooks/useSceneCanvas"
 
 const CIRCLE_INITIAL_RADIUS = 0
 
 export default function Scene() {
   const windowViewport = useWindowViewport()
-  const canvas = useRef<HTMLCanvasElement>(null!)
+  const canvas = useSceneCanvas()
+  // const canvas = useRef<HTMLCanvasElement>(null!)
   const circle = useRef<{ radius: number } | null>(null)
 
   useEffect(() => {
@@ -21,6 +23,8 @@ export default function Scene() {
     circle.current! = { radius: CIRCLE_INITIAL_RADIUS }
 
     if (!canvas.current) return
+
+    document.documentElement.style.cursor = "wait"
     const context = canvas.current.getContext("2d")!
     context.fillStyle = "#F8A325"
     context.fillRect(0, 0, window.innerWidth, window.innerHeight)
@@ -32,6 +36,9 @@ export default function Scene() {
     gsap.to(circle.current, {
       radius: R_max,
       delay: 1,
+      onComplete: () => {
+        document.documentElement.style.cursor = "default"
+      },
       ease: "power4.inOut",
       duration: 1.5,
       onUpdate: () => {

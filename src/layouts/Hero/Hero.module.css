@@ -119,5 +119,7 @@
     justify-content: space-between;
     align-items: center;
 
+    contain: paint;
+
     z-index: -1;
 }

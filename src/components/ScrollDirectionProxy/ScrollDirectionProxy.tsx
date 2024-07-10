@@ -1,7 +1,11 @@
-import { useEffect, useRef } from "react"
+import { useEffect } from "react"
+
+import useLocomotiveScroll from "../../hooks/useLocomotiveScroll"
 
 
 export default function ScrollDirectionProxy(){
+  const locomotiveScroll = useLocomotiveScroll()
+
   useEffect(() => {
     let lastScrollY = window.scrollY
 
@@ -10,19 +14,23 @@ export default function ScrollDirectionProxy(){
 
       if(lastScrollY > currScrollY) {
         document.body.setAttribute("data-scroll-direction", "up")
-      } else {
+      } else if (lastScrollY < currScrollY) {
         document.body.setAttribute("data-scroll-direction", "down")
       }
 
       lastScrollY = currScrollY
     }
 
-    window.addEventListener("wheel", handleWheel)
+    if(locomotiveScroll){
+      console.log("locomotiveScroll", locomotiveScroll)
+      locomotiveScroll.on("scroll", handleWheel)
+
+    }
 
     return () => {
-      window.removeEventListener("wheel", handleWheel)
+      // locomotiveScroll.on("wheel", handleWheel)
     }
-  }, [])
+  }, [locomotiveScroll])
 
   return null
 }

@@ -15,6 +15,15 @@
     --header-top-height: 60px;
 }
 
+html {
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: #ff0;
+    color: var(--color-brown);
+}
+
 ::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -24,7 +33,7 @@ section {
     position: relative;
 }
 
-section:not(:nth-of-type(1)){
+section:not(:nth-of-type(1)) {
     padding-top: var(--section-padding);
 
 }
@@ -32,7 +41,8 @@ section:not(:nth-of-type(1)){
 .container {
     padding-inline: var(--container-padding);
 }
-.col{
+
+.col {
     display: flex;
     flex-direction: column;
 }
@@ -56,29 +66,32 @@ h2 {
     color: var(--color-yellow);
     text-transform: uppercase;
 }
-h3{
+
+h3 {
     font-size: 4.37vw;
     color: var(--color-yellow);
 
 }
-h4{
+
+h4 {
     font-size: 3.03vw;
     line-height: 1;
     font-weight: 900;
     text-transform: uppercase;
 }
 
-a{
+a {
     text-decoration: none;
     font-weight: 400;
 }
 
 a,
 p {
-    font-size: max(20px ,1.04vw);
+    font-size: max(20px, 1.04vw);
     font-weight: 400;
     font-style: normal;
 }
+
 p.small,
 span.small {
     font-size: 0.8em;
@@ -88,4 +101,37 @@ small {
     font-size: 0.6em;
     font-weight: 400;
     font-style: italic;
+}
+
+/* ------------------------------------ ANIMATING ---------------------------------------- */
+
+@keyframes shaking {
+    0% {
+        transform: rotate(var(--shaking-range));
+    }
+
+    20% {
+        transform: rotate((-1 * var(--shaking-range)));
+    }
+
+    40% {
+        transform: rotate(0deg);
+    }
+
+    60% {
+        transform: rotate(calc(-1 * var(--shaking-range)));
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+}
+
+.shake {
+    transform-origin: 50% 50%;
+}
+
+.shake:hover {
+    animation: shaking 250ms linear 50ms;
+
 }

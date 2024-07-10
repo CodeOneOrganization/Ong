@@ -4,6 +4,7 @@
 
   position: relative;
 
+  contain: paint;
   z-index: 1;
 }
 .containerFooter {
@@ -35,8 +36,13 @@
   margin-top: 2vw;
 }
 .link {
-  overflow: hidden;
+  --shaking-range: 4deg;
+
+  /* overflow: hidden; */
+  contain: paint;
   color: var(--color-black);
+
+  cursor: pointer;
 }
 
 .logo {

@@ -22,6 +22,27 @@
 
 }
 
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  /* width: 24px; */
+  /* height: 24px; */
+  padding: 1rem;
+  aspect-ratio: 1 / 1;
+
+  color: var(--color-brown);
+  font-size: 2rem;
+
+  border-top-right-radius: var(--border-size);
+  background: transparent;
+
+  border: none;
+
+  cursor: pointer;
+}
+
 @media (orientation: portrait) {
   .modal {
     width: calc(100vw - 2 * var(--container-padding));

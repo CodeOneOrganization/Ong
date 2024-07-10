@@ -15,10 +15,12 @@
 
 body[data-scroll-direction="up"] .header {
   transform: translateY(0px);
+  transition-delay: 250ms;
 }
 
 body[data-scroll-direction="down"] .header {
   transform: translateY(calc(-1 * var(--header-top-height)));
+  transition-delay: 0ms;
 }
 
 .top {
@@ -31,9 +33,17 @@ body[data-scroll-direction="down"] .header {
 
   border-bottom-right-radius: var(--border-size);
   border-bottom-left-radius: var(--border-size);
+  box-shadow: 0 0 0 100vmax var(--color-yellow-light);
+  clip-path: inset(-100vmax 0 0 0);
 
   background-color: var(--color-yellow-light);
   
+}
+
+body[data-scroll-direction="up"] .top {
+  --shaking-range: 3deg;
+
+  animation: shaking 350ms linear;
 }
 
 .list {
@@ -42,6 +52,8 @@ body[data-scroll-direction="down"] .header {
   gap: 1rem;
 
   margin-inline: auto;
+
+  list-style-type: none;
 }
 
 .item {

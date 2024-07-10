@@ -35,13 +35,13 @@ export default function Footer() {
           <h4 className={styles.title}>
             <span className="span_inside_footerTitle">sitemap</span>
           </h4>
-          <p className={styles.link}>
+          <p className={`${styles.link} shake`}>
             <span className="span_insideLink">Doar</span>
           </p>
-          <p className={styles.link}>
+          <p className={`${styles.link} shake`}>
             <span className="span_insideLink">Sobre</span>
           </p>
-          <p className={styles.link}>
+          <p className={`${styles.link} shake`}>
             <span className="span_insideLink">Adotar</span>
           </p>
         </div>
@@ -50,10 +50,10 @@ export default function Footer() {
           <h4 className={styles.title}>
             <span className="span_inside_footerTitle">contact</span>
           </h4>
-          <a href="" className={styles.link}>
+          <a href="" className={`${styles.link} shake`}>
             <span className="span_insideLink">WhatsApp</span>
           </a>
-          <a href="" className={styles.link}>
+          <a href="" className={`${styles.link} shake`}>
             <span className="span_insideLink">Instagram</span>
           </a>
         </div>
