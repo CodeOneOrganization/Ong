@@ -13,6 +13,10 @@ export default function Header() {
     { x: window.innerWidth * -0.0927, y: window.innerHeight * 0.521, radius: 100 },
     { x: window.innerWidth * 0.4911, y: window.innerHeight * -0.297, radius: 100 * 1.4 }
   ])
+  const spot = useRef({
+    path: "M3.34559 500.718C11.5897 260.786 196.293 64.0758 435.232 40.7575L831.127 2.12167C1049.35 -19.1748 1241.06 146.296 1251.88 365.287C1253.62 400.429 1250.52 435.643 1242.66 469.94L1239.1 485.498C1187.11 712.531 985.114 873.5 752.205 873.5H270.532C200.726 873.5 133.623 846.518 83.248 798.195C27.7285 744.936 -2.49019 670.559 0.151732 593.67L3.34559 500.718Z",
+    height: 0,
+  })
 
   useEffect(() => {
     if (!canvas.current) return
@@ -58,6 +62,23 @@ export default function Header() {
         context.fill()
 
         circle.radius *= 1.01
+      }
+    })
+
+    GSAP.to(spot.current, {
+      duration: 1,
+      delay: 1.5 + 0.8,
+      onUpdate: () => {
+        context.clearRect(0, 0, window.innerWidth, window.innerHeight)
+
+        // drawing background
+        context.fillStyle = "#F8A325"
+        context.fillRect(0, 0, window.innerWidth, window.innerHeight)
+        
+        // drawing Spot3.svg into canvas
+        context.fillStyle = "#FEBC5B"
+        const path2d = new Path2D(spot.current.path)
+        context.fill(path2d)
       }
     })
 
