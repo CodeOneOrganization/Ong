@@ -24,6 +24,7 @@
 .title {
   overflow: hidden;
   color: var(--color-white);
+  padding-bottom: 2vw;
 }
 .logo span,
 .link span,
@@ -32,9 +33,7 @@
   transform: translateY(100%);
 }
 
-.link:first-of-type {
-  margin-top: 2vw;
-}
+
 .link {
   --shaking-range: 4deg;
 

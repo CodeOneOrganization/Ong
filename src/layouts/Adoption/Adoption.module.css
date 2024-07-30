@@ -1,5 +1,4 @@
 .adoption {
-
   min-height: 100vh;
 }
 
@@ -8,7 +7,6 @@
 
   cursor: grab;
   overflow: initial;
-
 }
 
 .spot {
@@ -20,12 +18,21 @@
   z-index: -1;
 }
 
-.title {
+.buttonAdoption {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
   display: inline-block;
   max-width: max-content;
 
   margin-top: 5vh;
-  
+
+  font-weight: 900;
+  font-size: 6.27vw;
+  line-height: 90%;
+  color: var(--color-yellow);
+  text-transform: uppercase;
 }
 
 .arrow {

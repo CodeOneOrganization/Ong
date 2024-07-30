@@ -15,8 +15,11 @@ function Arrow() {
 const length = 8
 
 export default function Adoption() {
+
+  
+
   return (
-    <section className={styles.adoption} data-slide-element>
+    <section className={styles.adoption} data-slide-element id="adoption">
       <div className="container">
         <Slide>
           <div className={styles.wrapper} data-slide-wrapper>
@@ -24,11 +27,11 @@ export default function Adoption() {
           </div>
         </Slide>
         <div className={styles.bottom}>
-          <h2 className={styles.title}>
+          <a href="https://www.instagram.com/pai.ong/?igsh=OGV5OXQ1ZjJycXJn" target="_blank" title="ir para o instagram" className={styles.buttonAdoption}>
             Adote
             <br />
             <Arrow />
-          </h2>
+          </a>
           <svg className={styles.spot} width="836" height="583" viewBox="0 0 836 583" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.89706 334.479C8.39314 174.524 131.529 43.3839 290.821 27.8383L554.751 2.08113C700.232 -12.1165 828.039 98.1974 835.255 244.191C836.413 267.619 834.345 291.095 829.109 313.96L826.734 324.332C792.074 475.687 657.41 583 502.137 583H181.021C134.484 583 89.7485 565.012 56.1653 532.797C19.1524 497.291 -0.993457 447.706 0.767819 396.447L2.89706 334.479Z" fill="#FEBC5B" />
           </svg>

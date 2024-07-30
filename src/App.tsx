@@ -11,6 +11,7 @@ import Support from "./layouts/Support";
 
 import ScrollDirectionProxy from "./components/ScrollDirectionProxy/ScrollDirectionProxy";
 import ModalController from "./components/Modal/ModalController";
+import WhatsApp from "./layouts/WhatsApp";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <Header />
       <Scene />
       <Tile />
+      <WhatsApp/>
       <Hero />
       <Adoption />
       <LoveVideo />

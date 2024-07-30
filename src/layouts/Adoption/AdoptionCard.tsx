@@ -14,8 +14,13 @@ function Seal() {
 }
 
 export default function AdoptionCard() {
+
+  const handleGoInstagram = () => {
+    window.open("https://www.instagram.com/pai.ong/?igsh=OGV5OXQ1ZjJycXJn")
+  }
+
   return (
-    <figure className={styles.card} data-slide-item >
+    <figure onClick={handleGoInstagram} className={styles.card} data-slide-item >
       <Seal />
       <img className={styles.image} src="" alt="" />
     </figure>

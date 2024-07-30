@@ -1,0 +1,19 @@
+@import "../../stylesguide.css";
+
+.WhatsApp{
+    cursor: pointer;
+    position: fixed;
+    bottom: 3vw;
+    right: clamp(1em, 3vw, 58px);
+
+    width: 5vw;
+    height: 5vw;
+
+    border-radius: 100%;
+    background-color: var(--color-yellow);
+
+    z-index: 99;
+
+    display: grid;
+    place-items: center;
+}

@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import { rendering, backToNormal } from "./animations";
 
 export default function Footer() {
+
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -35,9 +37,9 @@ export default function Footer() {
           <h4 className={styles.title}>
             <span className="span_inside_footerTitle">sitemap</span>
           </h4>
-          <p className={`${styles.link} shake`}>
+          <a  className={`${styles.link} shake`}>
             <span className="span_insideLink">Doar</span>
-          </p>
+          </a>
           <p className={`${styles.link} shake`}>
             <span className="span_insideLink">Sobre</span>
           </p>
@@ -50,10 +52,10 @@ export default function Footer() {
           <h4 className={styles.title}>
             <span className="span_inside_footerTitle">contact</span>
           </h4>
-          <a href="" className={`${styles.link} shake`}>
+          <a href="https://api.whatsapp.com/send?phone=+5581997517891&text=Olá, como faço para ajudar?" target="_blank" title="ir para o WhatsApp" className={`${styles.link} shake`}>
             <span className="span_insideLink">WhatsApp</span>
           </a>
-          <a href="" className={`${styles.link} shake`}>
+          <a href="https://www.instagram.com/pai.ong/?igsh=OGV5OXQ1ZjJycXJn" target="_blank" title="ir para o instagram" className={`${styles.link} shake`}>
             <span className="span_insideLink">Instagram</span>
           </a>
         </div>
